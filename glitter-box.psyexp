@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.5">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': '', 'duration_secs': '[60, 30, 15, 10, 5]', 'debug': &quot;['off', 'on']&quot;}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="['resources/gift-box.png', 'resources/slide-1.png', 'resources/slide-2.png', 'resources/slide-3.png']" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="glitter-box" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="begin">
+      <CodeComponent name="begin_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="&amp;#10;expVersion = &quot;2023.04.27&quot;&amp;#10;&amp;#10;SHOW_DEBUG = expInfo[&quot;debug&quot;] == &quot;on&quot;&amp;#10;THRESH_SECS = int(expInfo[&quot;duration_secs&quot;])&amp;#10;&amp;#10;SLIDES_DIR = &quot;resources&quot;&amp;#10;&amp;#10;# Slides: 1920(1919) x 1080&amp;#10;SLIDE_W_1 = 1.4&amp;#10;SLIDE_SIZE_1 = (SLIDE_W_1, SLIDE_W_1 / 1920 * 1080)&amp;#10;SLIDE_W_2 = 1.6&amp;#10;SLIDE_SIZE_2 = (SLIDE_W_2, SLIDE_W_2 / 1920 * 1080)&amp;#10;SLIDE_1 = make_slide(&quot;slide-1&quot;, (0, 0), SLIDE_SIZE_1)&amp;#10;SLIDE_2 = make_slide(&quot;slide-2&quot;, (0, 0), SLIDE_SIZE_1)&amp;#10;SLIDE_3 = make_slide(&quot;slide-3&quot;, (0, 0), SLIDE_SIZE_2)&amp;#10;&amp;#10;# Gift box: 690 x 652&amp;#10;BOX_W = 0.5&amp;#10;BOX_SIZE = (BOX_W, BOX_W / 690 * 652)&amp;#10;BOX_POS = (0, -0.12)&amp;#10;BOX = make_img(&quot;gift-box&quot;, &quot;resources/gift-box.png&quot;, BOX_POS, BOX_SIZE, 1)&amp;#10;&amp;#10;# Continue button&amp;#10;NEXT = make_button(&quot;continue&quot;, &quot;Continue&quot;, (0.6, -0.35), (0.25, 0.1))&amp;#10;&amp;#10;# Global mouse&amp;#10;MOUSE = core.Mouse(win=win)&amp;#10;MOUSE_L = 0&amp;#10;MOUSE_L_prev = 0&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="expVersion = &quot;2023.04.27&quot;;&amp;#10;SHOW_DEBUG = (expInfo[&quot;debug&quot;] === &quot;on&quot;);&amp;#10;THRESH_SECS = Number.parseInt(expInfo[&quot;duration_secs&quot;]);&amp;#10;SLIDES_DIR = &quot;resources&quot;;&amp;#10;SLIDE_W_1 = 1.4;&amp;#10;SLIDE_SIZE_1 = [SLIDE_W_1, ((SLIDE_W_1 / 1920) * 1080)];&amp;#10;SLIDE_W_2 = 1.6;&amp;#10;SLIDE_SIZE_2 = [SLIDE_W_2, ((SLIDE_W_2 / 1920) * 1080)];&amp;#10;SLIDE_1 = make_slide(&quot;slide-1&quot;, [0, 0], SLIDE_SIZE_1);&amp;#10;SLIDE_2 = make_slide(&quot;slide-2&quot;, [0, 0], SLIDE_SIZE_1);&amp;#10;SLIDE_3 = make_slide(&quot;slide-3&quot;, [0, 0], SLIDE_SIZE_2);&amp;#10;BOX_W = 0.5;&amp;#10;BOX_SIZE = [BOX_W, ((BOX_W / 690) * 652)];&amp;#10;BOX_POS = [0, (- 0.12)];&amp;#10;BOX = make_img(&quot;gift-box&quot;, &quot;resources/gift-box.png&quot;, BOX_POS, BOX_SIZE, 1);&amp;#10;NEXT = make_button(&quot;continue&quot;, &quot;Continue&quot;, [0.6, (- 0.35)], [0.25, 0.1]);&amp;#10;MOUSE = new core.Mouse({&quot;win&quot;: psychoJS.window});&amp;#10;MOUSE_L = 0;&amp;#10;MOUSE_L_prev = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="SLIDE_1.autoDraw = true;&amp;#10;BOX.autoDraw = true;&amp;#10;NEXT.autoDraw = true;&amp;#10;START_T = null;&amp;#10;END_T = null;&amp;#10;NEXT_SLIDE = true;&amp;#10;x = 0;&amp;#10;y = 0;&amp;#10;coords_x = [];&amp;#10;coords_y = [];&amp;#10;coords_t = [];&amp;#10;coords_inbox = [];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="&amp;#10;SLIDE_1.autoDraw = True&amp;#10;BOX.autoDraw = True&amp;#10;NEXT.autoDraw = True&amp;#10;&amp;#10;START_T = None&amp;#10;END_T = None&amp;#10;NEXT_SLIDE = True&amp;#10;&amp;#10;x = 0&amp;#10;y = 0&amp;#10;coords_x = []&amp;#10;coords_y = []&amp;#10;coords_t = []&amp;#10;coords_inbox = []&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="&amp;#10;if NEXT_SLIDE and t - START_T &gt; THRESH_SECS:&amp;#10;    NEXT_SLIDE = False&amp;#10;    SLIDE_1.autoDraw = False&amp;#10;    SLIDE_2.autoDraw = True&amp;#10;    BOX.autoDraw = False&amp;#10;    BOX.autoDraw = True&amp;#10;&amp;#10;MOUSE_L = MOUSE.getPressed()[0]&amp;#10;if MOUSE_L_prev != MOUSE_L:&amp;#10;    MOUSE_L_prev = MOUSE_L&amp;#10;    if MOUSE_L:&amp;#10;        if START_T is None:&amp;#10;            if NEXT.contains(MOUSE):&amp;#10;                START_T = t&amp;#10;                NEXT.autoDraw = False&amp;#10;        elif END_T is None:&amp;#10;            if t - START_T &gt; THRESH_SECS:&amp;#10;                if BOX.contains(MOUSE):&amp;#10;                    END_T = t&amp;#10;                    BOX.autoDraw = False&amp;#10;                    SLIDE_2.autoDraw = False&amp;#10;                    SLIDE_3.autoDraw = True&amp;#10;            else:&amp;#10;                x, y = MOUSE.getPos()&amp;#10;                coords_x.append(round_dp(x))&amp;#10;                coords_y.append(round_dp(y))&amp;#10;                coords_t.append(round_dp(t - START_T))&amp;#10;                coords_inbox.append(BOX.contains(MOUSE))&amp;#10;        elif t - END_T &gt; 1:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;if SHOW_DEBUG:&amp;#10;    begin_text.text = f&quot;&quot;&quot;&amp;#10;t = {round(t, 3)}&amp;#10;frameN = {frameN}&amp;#10;START_T = {round(START_T, 3)}&amp;#10;end-by = {round(THRESH_SECS + START_T, 3)}&amp;#10;coords_x = {coords_x}&amp;#10;coords_y = {coords_y}&amp;#10;coords_t = {coords_t}&amp;#10;coords_inbox = {coords_inbox}&amp;#10;&quot;&quot;&quot;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((NEXT_SLIDE &amp;&amp; ((t - START_T) &gt; THRESH_SECS))) {&amp;#10;    NEXT_SLIDE = false;&amp;#10;    SLIDE_1.autoDraw = false;&amp;#10;    SLIDE_2.autoDraw = true;&amp;#10;    BOX.autoDraw = false;&amp;#10;    BOX.autoDraw = true;&amp;#10;}&amp;#10;MOUSE_L = MOUSE.getPressed()[0];&amp;#10;if ((MOUSE_L_prev !== MOUSE_L)) {&amp;#10;    MOUSE_L_prev = MOUSE_L;&amp;#10;    if (MOUSE_L) {&amp;#10;        if ((START_T === null)) {&amp;#10;            if (NEXT.contains(MOUSE)) {&amp;#10;                START_T = t;&amp;#10;                NEXT.autoDraw = false;&amp;#10;            }&amp;#10;        } else {&amp;#10;            if ((END_T === null)) {&amp;#10;                if (((t - START_T) &gt; THRESH_SECS)) {&amp;#10;                    if (BOX.contains(MOUSE)) {&amp;#10;                        END_T = t;&amp;#10;                        BOX.autoDraw = false;&amp;#10;                        SLIDE_2.autoDraw = false;&amp;#10;                        SLIDE_3.autoDraw = true;&amp;#10;                    }&amp;#10;                } else {&amp;#10;                    [x, y] = MOUSE.getPos();&amp;#10;                    coords_x.push(round_dp(x));&amp;#10;                    coords_y.push(round_dp(y));&amp;#10;                    coords_t.push(round_dp((t - START_T)));&amp;#10;                    coords_inbox.push(BOX.contains(MOUSE));&amp;#10;                }&amp;#10;            } else {&amp;#10;                if (((t - END_T) &gt; 1)) {&amp;#10;                    continueRoutine = false;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if (SHOW_DEBUG) {&amp;#10;    begin_text.text = `&amp;#10;t = ${round(t, 3)}&amp;#10;frameN = ${frameN}&amp;#10;START_T = ${round(START_T, 3)}&amp;#10;end-by = ${round((THRESH_SECS + START_T), 3)}&amp;#10;coords_x = ${coords_x}&amp;#10;coords_y = ${coords_y}&amp;#10;coords_t = ${coords_t}&amp;#10;coords_inbox = ${coords_inbox}`&amp;#10;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="psychoJS.experiment.addData(&quot;expVersion&quot;, expVersion);&amp;#10;psychoJS.experiment.addData(&quot;n_screentaps&quot;, coords_x.length);&amp;#10;psychoJS.experiment.addData(&quot;coords_x&quot;, coords_x);&amp;#10;psychoJS.experiment.addData(&quot;coords_y&quot;, coords_y);&amp;#10;psychoJS.experiment.addData(&quot;coords_t&quot;, coords_t);&amp;#10;psychoJS.experiment.addData(&quot;coords_inbox&quot;, coords_inbox);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="&amp;#10;thisExp.addData(&quot;expVersion&quot;, expVersion)&amp;#10;&amp;#10;thisExp.addData(&quot;n_screentaps&quot;, len(coords_x))&amp;#10;&amp;#10;# Position tracking&amp;#10;thisExp.addData(&quot;coords_x&quot;, coords_x)&amp;#10;thisExp.addData(&quot;coords_y&quot;, coords_y)&amp;#10;thisExp.addData(&quot;coords_t&quot;, coords_t)&amp;#10;thisExp.addData(&quot;coords_inbox&quot;, coords_inbox)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="begin_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="functions_g">
+        <Param val="&amp;#10;def make_button(name, text, pos, size):&amp;#10;    return visual.ButtonStim(&amp;#10;        win=win, &amp;#10;        text=text,&amp;#10;        pos=pos,&amp;#10;        letterHeight=0.04,&amp;#10;        size=size,&amp;#10;        borderWidth=0.005,&amp;#10;        fillColor=&quot;lightgrey&quot;,&amp;#10;        borderColor=&quot;darkgrey&quot;,&amp;#10;        color=&quot;black&quot;,&amp;#10;        colorSpace=&quot;rgb&quot;,&amp;#10;        opacity=None,&amp;#10;        bold=True,&amp;#10;        italic=False,&amp;#10;        padding=None,&amp;#10;        anchor=&quot;center&quot;,&amp;#10;        name=name&amp;#10;    )&amp;#10;&amp;#10;def make_img(name, file_name, pos, size, opacity):&amp;#10;    return visual.ImageStim(&amp;#10;        win=win,&amp;#10;        name=name,&amp;#10;        image=file_name,&amp;#10;        pos=pos,&amp;#10;        size=size,&amp;#10;        opacity=opacity&amp;#10;    )&amp;#10;&amp;#10;def make_slide(name, pos=(0, 0), size=SLIDE_SIZE):&amp;#10;    return make_img(&amp;#10;        name,&amp;#10;        f&quot;{SLIDES_DIR}/{name}.png&quot;,&amp;#10;        pos, size, 1&amp;#10;    )&amp;#10;&amp;#10;def round_dp(x, dp=5):&amp;#10;    num, = (10 ** dp),&amp;#10;    return round(x * num) / num&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="function make_button(name, text, pos, size) {&amp;#10;    return new visual.ButtonStim({&quot;win&quot;: psychoJS.window, &quot;text&quot;: text, &quot;pos&quot;: pos, &quot;letterHeight&quot;: 0.04, &quot;size&quot;: size, &quot;borderWidth&quot;: 0.005, &quot;fillColor&quot;: &quot;lightgrey&quot;, &quot;borderColor&quot;: &quot;darkgrey&quot;, &quot;color&quot;: &quot;black&quot;, &quot;colorSpace&quot;: &quot;rgb&quot;, &quot;opacity&quot;: null, &quot;bold&quot;: true, &quot;italic&quot;: false, &quot;padding&quot;: null, &quot;anchor&quot;: &quot;center&quot;, &quot;name&quot;: name});&amp;#10;}&amp;#10;function make_img(name, file_name, pos, size, opacity) {&amp;#10;    return new visual.ImageStim({&quot;win&quot;: psychoJS.window, &quot;name&quot;: name, &quot;image&quot;: file_name, &quot;pos&quot;: pos, &quot;size&quot;: size, &quot;opacity&quot;: opacity});&amp;#10;}&amp;#10;function make_slide(name, pos = [0, 0], size = SLIDE_SIZE) {&amp;#10;    return make_img(name, `${SLIDES_DIR}/${name}.png`, pos, size, 1);&amp;#10;}&amp;#10;function round_dp(x, dp = 5) {&amp;#10;    var num;&amp;#10;    [num] = [Math.pow(10, dp)];&amp;#10;    return (Math.round((x * num)) / num);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="functions_g" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="begin_text">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="begin_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.6, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="begin"/>
+  </Flow>
+</PsychoPy2experiment>
